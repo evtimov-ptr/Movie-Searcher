@@ -1,1 +1,2 @@
-key = "d408f0bb";
+/////////// Insert your API key here
+key = "";
