@@ -57,4 +57,9 @@ const getMovie = () => {
 };
 
 searchBtn.addEventListener("click", getMovie);
-// window.addEventListener("load", getMovie);
+movieNameValue.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    getMovie();
+  }
+});
+window.addEventListener("load", getMovie);
