@@ -12,6 +12,40 @@ body {
   background: linear-gradient(#1c1917 50%, #1e293b 50%);
 }
 
+.main-header {
+  background-color: #1e293b;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em 1.5em;
+}
+
+.logo {
+  color: #fff;
+  font-size: 15px;
+}
+
+.main-nav__links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.main-nav__link a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px;
+}
+
+.main-nav__link a:hover,
+.main-nav__link a:active {
+  color: #a0a0a0;
+  border-radius: 5px;
+}
+
 #particles-js {
   height: 100%;
 }
