@@ -56,10 +56,18 @@ const getMovie = () => {
   }
 };
 
+/////////////////////////
+// Dark Mode
+let darkToggle = document.querySelector("#darkToggle");
+
+darkToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+
 searchBtn.addEventListener("click", getMovie);
 movieNameValue.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     getMovie();
   }
 });
-window.addEventListener("load", getMovie);
+// window.addEventListener("load", getMovie);
